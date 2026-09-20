@@ -1,0 +1,17 @@
+{
+  "service": "circular-rental",
+  "source_context": "http://health.people.com.cn/n1/2026/0826/c14739-40786123.html",
+  "sample": {
+    "asset_id": "CAM-R50-0018",
+    "condition_grade": "A",
+    "accessories": [
+      "镜头",
+      "电池",
+      "充电器"
+    ],
+    "availability": {
+      "warehouse": "SH-02",
+      "status": "inspection_passed"
+    }
+  }
+}

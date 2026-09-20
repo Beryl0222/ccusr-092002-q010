@@ -1,0 +1,11 @@
+{
+  "name": "circular-rental",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "管理数码与户外设备的验机、信用免押、物流交接、损伤争议和循环寿命。",
+  "scripts": {
+    "check": "node src/service.js --check",
+    "test": "node --test"
+  }
+}
