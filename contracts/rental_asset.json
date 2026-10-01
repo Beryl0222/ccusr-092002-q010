@@ -1,6 +1,7 @@
 {
   "service": "circular-rental",
   "source_context": "http://health.people.com.cn/n1/2026/0826/c14739-40786123.html",
+  "schema_version": 2,
   "sample": {
     "asset_id": "CAM-R50-0018",
     "condition_grade": "A",
@@ -13,5 +14,131 @@
       "warehouse": "SH-02",
       "status": "inspection_passed"
     }
-  }
+  },
+  "warehouses": [
+    { "code": "SH-02", "name": "上海二仓", "region": "east" },
+    { "code": "BJ-01", "name": "北京一仓", "region": "north" },
+    { "code": "GZ-03", "name": "广州三仓", "region": "south" }
+  ],
+  "categories": [
+    { "id": "camera", "name": "相机" },
+    { "id": "drone", "name": "无人机" },
+    { "id": "camping_tent", "name": "露营帐篷" },
+    { "id": "projector", "name": "投影仪" }
+  ],
+  "condition_grades": ["A", "B", "C"],
+  "assets": [
+    {
+      "asset_id": "CAM-R50-0018",
+      "category": "camera",
+      "condition_grade": "A",
+      "accessories": ["镜头", "电池", "充电器"],
+      "availability": { "warehouse": "SH-02", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-02T10:00:00+08:00", "passed": true, "inspector": "qa-sh-02" }
+    },
+    {
+      "asset_id": "CAM-R50-0021",
+      "category": "camera",
+      "condition_grade": "B",
+      "accessories": ["镜头", "电池"],
+      "availability": { "warehouse": "BJ-01", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-05T14:20:00+08:00", "passed": true, "inspector": "qa-bj-01" }
+    },
+    {
+      "asset_id": "CAM-M6-0007",
+      "category": "camera",
+      "condition_grade": "C",
+      "accessories": ["机身", "电池"],
+      "availability": { "warehouse": "GZ-03", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-08T09:10:00+08:00", "passed": true, "inspector": "qa-gz-03" }
+    },
+    {
+      "asset_id": "CAM-R50-0025",
+      "category": "camera",
+      "condition_grade": "A",
+      "accessories": ["镜头", "电池", "充电器"],
+      "availability": { "warehouse": "SH-02", "status": "maintenance" },
+      "inspection": { "inspected_at": "2026-08-20T11:00:00+08:00", "passed": false, "inspector": "qa-sh-02" }
+    },
+    {
+      "asset_id": "DRN-AV2-0104",
+      "category": "drone",
+      "condition_grade": "A",
+      "accessories": ["遥控器", "备用桨叶", "电池"],
+      "availability": { "warehouse": "SH-02", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-01T16:40:00+08:00", "passed": true, "inspector": "qa-sh-02" }
+    },
+    {
+      "asset_id": "DRN-AV2-0110",
+      "category": "drone",
+      "condition_grade": "B",
+      "accessories": ["遥控器", "电池"],
+      "availability": { "warehouse": "BJ-01", "status": "rentable" },
+      "inspection": null
+    },
+    {
+      "asset_id": "DRN-AV2-0112",
+      "category": "drone",
+      "condition_grade": "A",
+      "accessories": ["遥控器", "备用桨叶", "电池"],
+      "availability": { "warehouse": "GZ-03", "status": "rentable" },
+      "inspection": null
+    },
+    {
+      "asset_id": "DRN-LT-0033",
+      "category": "drone",
+      "condition_grade": "C",
+      "accessories": ["遥控器"],
+      "availability": { "warehouse": "GZ-03", "status": "maintenance" },
+      "inspection": { "inspected_at": "2026-08-28T13:00:00+08:00", "passed": false, "inspector": "qa-gz-03" }
+    },
+    {
+      "asset_id": "TNT-4P-0210",
+      "category": "camping_tent",
+      "condition_grade": "A",
+      "accessories": ["地钉", "防潮垫"],
+      "availability": { "warehouse": "SH-02", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-03T10:30:00+08:00", "passed": true, "inspector": "qa-sh-02" }
+    },
+    {
+      "asset_id": "TNT-4P-0215",
+      "category": "camping_tent",
+      "condition_grade": "B",
+      "accessories": ["地钉"],
+      "availability": { "warehouse": "BJ-01", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-06T15:00:00+08:00", "passed": true, "inspector": "qa-bj-01" }
+    },
+    {
+      "asset_id": "TNT-2P-0088",
+      "category": "camping_tent",
+      "condition_grade": "C",
+      "accessories": ["地钉"],
+      "availability": { "warehouse": "GZ-03", "status": "retired" },
+      "inspection": { "inspected_at": "2026-07-19T09:00:00+08:00", "passed": true, "inspector": "qa-gz-03" }
+    },
+    {
+      "asset_id": "PRJ-4K-0050",
+      "category": "projector",
+      "condition_grade": "A",
+      "accessories": ["遥控器", "电源线"],
+      "availability": { "warehouse": "SH-02", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-04T11:20:00+08:00", "passed": true, "inspector": "qa-sh-02" }
+    },
+    {
+      "asset_id": "PRJ-4K-0052",
+      "category": "projector",
+      "condition_grade": "B",
+      "accessories": ["遥控器", "电源线"],
+      "availability": { "warehouse": "BJ-01", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-07T17:15:00+08:00", "passed": true, "inspector": "qa-bj-01" }
+    },
+    {
+      "asset_id": "PRJ-HD-0019",
+      "category": "projector",
+      "condition_grade": "C",
+      "accessories": ["电源线"],
+      "availability": { "warehouse": "GZ-03", "status": "rentable" },
+      "inspection": { "inspected_at": "2026-09-09T08:45:00+08:00", "passed": true, "inspector": "qa-gz-03" }
+    }
+  ]
 }
