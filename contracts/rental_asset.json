@@ -3,6 +3,7 @@
   "source_context": "http://health.people.com.cn/n1/2026/0826/c14739-40786123.html",
   "sample": {
     "asset_id": "CAM-R50-0018",
+    "category": "camera",
     "condition_grade": "A",
     "accessories": [
       "镜头",
@@ -12,6 +13,83 @@
     "availability": {
       "warehouse": "SH-02",
       "status": "inspection_passed"
+    },
+    "inspection": {
+      "checked_at": "2026-09-20T10:00:00Z",
+      "shutter_count": 12040,
+      "result": "pass"
     }
-  }
+  },
+  "assets": [
+    {
+      "asset_id": "CAM-R50-0018",
+      "category": "camera",
+      "condition_grade": "A",
+      "accessories": ["镜头", "电池", "充电器"],
+      "availability": { "warehouse": "SH-02", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-20T10:00:00Z", "shutter_count": 12040, "result": "pass" }
+    },
+    {
+      "asset_id": "CAM-R50-0019",
+      "category": "camera",
+      "condition_grade": "B",
+      "accessories": ["电池", "充电器"],
+      "availability": { "warehouse": "SH-02", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-21T10:00:00Z", "shutter_count": 38110, "result": "pass" }
+    },
+    {
+      "asset_id": "CAM-M6-0007",
+      "category": "camera",
+      "condition_grade": "C",
+      "accessories": ["电池"],
+      "availability": { "warehouse": "HZ-01", "status": "inspection_passed" }
+    },
+    {
+      "asset_id": "DRN-AV2-0031",
+      "category": "drone",
+      "condition_grade": "A",
+      "accessories": ["遥控器", "备用桨叶", "电池"],
+      "availability": { "warehouse": "SH-02", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-22T10:00:00Z", "flight_minutes": 540, "result": "pass" }
+    },
+    {
+      "asset_id": "DRN-AV2-0032",
+      "category": "drone",
+      "condition_grade": "B",
+      "accessories": ["遥控器", "电池"],
+      "availability": { "warehouse": "BJ-03", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-23T10:00:00Z", "flight_minutes": 2130, "result": "pass" }
+    },
+    {
+      "asset_id": "PRJ-X9-0012",
+      "category": "projector",
+      "condition_grade": "B",
+      "accessories": ["电源线", "收纳包"],
+      "availability": { "warehouse": "BJ-03", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-24T10:00:00Z", "lamp_hours": 860, "result": "pass" }
+    },
+    {
+      "asset_id": "TNT-4P-0055",
+      "category": "tent",
+      "condition_grade": "A",
+      "accessories": ["地钉", "防风绳"],
+      "availability": { "warehouse": "HZ-01", "status": "inspection_passed" },
+      "inspection": { "checked_at": "2026-09-25T10:00:00Z", "result": "pass" }
+    },
+    {
+      "asset_id": "TNT-4P-0056",
+      "category": "tent",
+      "condition_grade": "C",
+      "accessories": ["地钉"],
+      "availability": { "warehouse": "HZ-01", "status": "rented_out" },
+      "inspection": { "checked_at": "2026-08-02T10:00:00Z", "result": "pass" }
+    },
+    {
+      "asset_id": "SPK-BT-0101",
+      "category": "speaker",
+      "condition_grade": "B",
+      "accessories": ["电源线"],
+      "availability": { "warehouse": "BJ-03", "status": "inspection_pending" }
+    }
+  ]
 }
